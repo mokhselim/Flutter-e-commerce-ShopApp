@@ -20,6 +20,7 @@ class RegisterScreen extends StatelessWidget {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   final nameController = TextEditingController();
+  final phoneController = TextEditingController();
   final formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
@@ -104,6 +105,18 @@ class RegisterScreen extends StatelessWidget {
                                 ),
                               SizedBox(
                                 height: 15,
+                              ), if (!login)
+                                defaultTextFormField(
+                                  prefixIcon: Icon(
+                                    CupertinoIcons.phone,
+                                    color: mainColor,
+                                  ),
+                                  hint: 'phone',
+                                  inputType: TextInputType.phone,
+                                  textEditingController: phoneController,
+                                ),
+                              SizedBox(
+                                height: 15,
                               ),
                               defaultTextFormField(
                                 prefixIcon: Icon(
@@ -150,6 +163,7 @@ class RegisterScreen extends StatelessWidget {
                                           endPoint: LOGIN);
                                     } else {
                                       cubit.apiAuthentication(
+                                        phoneNumber: phoneController.text,
                                           password: passwordController.text,
                                           email: emailController.text,
                                           name: nameController.text,

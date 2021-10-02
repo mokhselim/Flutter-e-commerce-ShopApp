@@ -32,7 +32,7 @@ FavoritesModel? favoritesProduct;
 List<ProductData>? saleProducts = [];
 List<ProductData>? topSaleProducts = [];
 ///TODO: ADD YOUR API
-String shopUrl = 'OUR API';
+String shopUrl = 'https://student.valuxapps.com/api/';
 String vat =
     'Value-Added Tax \n \nAs per Egyptian Tax regulations, VAT is charged at 14% on orders sold '
     'and shipped by ShopIN within the Egypt. The advertised prices for products displayed at ShopIN '

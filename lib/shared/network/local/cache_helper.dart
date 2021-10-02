@@ -27,4 +27,8 @@ class CacheHelper {
   static getData({required String key}) {
     return sharedPreferences.get(key);
   }
+
+  static clearData() {
+    return sharedPreferences.clear();
+  }
 }
