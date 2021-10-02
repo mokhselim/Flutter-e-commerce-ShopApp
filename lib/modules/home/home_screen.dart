@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
       listener: (BuildContext context, state) {},
       builder: (BuildContext context, Object state) {
         var cubit = AppCubit.get(context);
-        if (state is AppGetHomeDataSuccessState || homeModel !=null) {
+        if ( homeModel != null ) {
           return SingleChildScrollView(
             physics: BouncingScrollPhysics(),
             child: Column(
@@ -28,6 +28,7 @@ class HomeScreen extends StatelessWidget {
                 featureContainer(size),
                 saleContainer(),
                 dualCamera(size),
+
               ],
             ),
           );

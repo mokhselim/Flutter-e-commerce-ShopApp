@@ -4,7 +4,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shopin/components/constant/constant.dart';
 import 'package:shopin/shared/bloc/app_bloc/app_bloc.dart';
 import 'package:shopin/shared/bloc/app_bloc/app_states.dart';
-import 'package:shopin/shared/network/local/cache_helper.dart';
 import 'package:shopin/style/colors.dart';
 import 'app_bar.dart';
 import 'bottomNavBar.dart';
